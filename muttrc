@@ -1,0 +1,14 @@
+source "~/.mutt/gmail.account"
+
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/gmail.account<enter><change-folder>!<enter>'
+macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/school.account<enter><change-folder>!<enter>'
+macro index <f6> '<sync-mailbox><enter-command>source ~/.mutt/spam.account<enter><change-folder>!<enter>'
+
+macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index,pager ga "<change-folder>=[Gmail]/All<quote-char> Mail<enter>" "Go to all mail"
+macro index,pager y "<enter-command>unset trash<enter><delete-message>" "Gmail archive message"
+bind index,pager g group-reply
+
+set message_cachedir="~/.mutt/cache/bodies"
+set certificate_file=~/.mutt/certificates
+set editor = "vim"
