@@ -145,9 +145,6 @@ export TERM="screen-256color"
 # added by duckpan installer
 eval $(perl -I${HOME}/perl5/lib/perl5 -Mlocal::lib)
 
-#open irssi with nicklist
-alias irssi="screen irssi"
-
 #cd and ls
 function cl(){
   cd "$1" && ls
@@ -168,3 +165,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 function myip(){
   curl ifconfig.me
 }
+
+PATH=$PATH:/home/matt/bin

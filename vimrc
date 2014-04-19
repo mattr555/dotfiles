@@ -20,6 +20,8 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'freitass/todo.txt-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Townk/vim-autoclose'
+Plugin 'dockyard/vim-easydir'
+Plugin 'jaxbot/github-issues.vim'
 
 set nu
 syntax on
@@ -72,3 +74,6 @@ inoremap {<CR> {<CR>}<C-o>O}
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <C-p> :Unite file_rec/async<cr>
 nnoremap <leader>b :Unite buffer<cr>
+
+source ~/.vimrc-private
+let g:github_upstream_issues = 1
