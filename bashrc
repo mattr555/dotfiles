@@ -166,4 +166,19 @@ function myip(){
   curl ifconfig.me
 }
 
-PATH=$PATH:/home/matt/bin
+#sprunge.us
+function sprunge(){
+  curl -F 'sprunge=<-' http://sprunge.us
+}
+
+#z for jumping
+. /home/matt/bin/z.sh
+
+PATH=$PATH:/home/matt/bin:/home/matt/google_appengine
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+#run xmodmap incase it doesn't already
+xmodmap ~/.Xmodmap
+xbindkeys

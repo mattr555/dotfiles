@@ -22,6 +22,12 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Townk/vim-autoclose'
 Plugin 'dockyard/vim-easydir'
 Plugin 'jaxbot/github-issues.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Arduino-syntax-file'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'TwitVim'
 
 set nu
 syntax on
@@ -68,7 +74,7 @@ let g:vim_arduino_serial_port = "/dev/ttyACM0"
 nnoremap <leader>ft Vatzf
 
 "brace expansion
-inoremap {<CR> {<CR>}<C-o>O}
+inoremap {<CR> {<CR>}<Esc>O
 
 "unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
@@ -77,3 +83,5 @@ nnoremap <leader>b :Unite buffer<cr>
 
 source ~/.vimrc-private
 let g:github_upstream_issues = 1
+
+let twitvim_enable_python = 1
