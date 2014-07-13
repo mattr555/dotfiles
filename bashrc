@@ -136,7 +136,7 @@ function tfav(){
 
 export PROMPT_COMMAND=
 export POWERLINE_COMMAND="$HOME/.powerline/scripts/powerline"
-. /home/matt/.powerline/powerline/bindings/bash/powerline.sh
+. /home/matt/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
 
 #256 colors?
