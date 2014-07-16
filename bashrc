@@ -84,6 +84,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -135,7 +136,7 @@ function tfav(){
 #}
 
 export PROMPT_COMMAND=
-export POWERLINE_COMMAND="$HOME/.powerline/scripts/powerline"
+export POWERLINE_COMMAND="$HOME/.local/bin/powerline"
 . /home/matt/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
 
@@ -174,7 +175,7 @@ function sprunge(){
 #z for jumping
 . /home/matt/bin/z.sh
 
-PATH=$PATH:/home/matt/bin:/home/matt/google_appengine
+PATH=$PATH:/home/matt/bin:/home/matt/google_appengine:/home/matt/perl5/bin:/usr/local/go/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -182,3 +183,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 #run xmodmap incase it doesn't already
 xmodmap ~/.Xmodmap
 xbindkeys
+
+# mutt background fix
+COLORFGBG="default;default"
+
+#duckpan completion
+source ~/bin/duckpancomp.sh
